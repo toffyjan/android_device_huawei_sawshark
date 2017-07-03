@@ -1,0 +1,8 @@
+# Added backup flag for recovery, otherwise it doesn't appear
+# mount point	fstype		device						flags
+
+/system		ext4		/dev/block/platform/soc/7824900.sdhci/by-name/system
+/cache		ext4		/dev/block/platform/soc/7824900.sdhci/by-name/cache
+/data		ext4		/dev/block/platform/soc/7824900.sdhci/by-name/userdata
+/boot		emmc		/dev/block/platform/soc/7824900.sdhci/by-name/boot
+/recovery	emmc		/dev/block/platform/soc/7824900.sdhci/by-name/recovery flags=backup=1
